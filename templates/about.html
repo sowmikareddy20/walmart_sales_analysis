@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+         
+    
+        /* Navigation bar styling */
+        .navbar {
+            background-color: #007cc2; /* Dark blue background for the navigation bar */
+        }
+
+        /* Walmart logo styling */
+        .navbar img {
+            height: 50px;
+            padding: 0px 0;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        /* Navigation link styling */
+        .navbar-nav .nav-link {
+            color: white; /* White text for better contrast */
+            margin-right: 15px; /* Spacing between navigation links */
+        }
+
+        /* Active navigation link styling */
+        .navbar-nav .nav-link.active {
+            color: #007cc2; /* Highlight color for the active page */
+        }
+
+        /* Hover effect for navigation links */
+        .navbar-nav .nav-link:hover {
+            color: #007cc2; /* Highlight color when hovering over links */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='walmart.png') }}" alt="Walmart Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/document">Document</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact-us">Contact us</a>
+                </li>
+                <!-- Add more navigation items here -->
+            </ul>
+        </div>
+    </nav>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #C6E2FF;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #073bf5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member h2 {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .team-member .linkedin-link {
+            color: #0077b5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .team-member .linkedin-link:hover {
+            color: #00405e;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1 class="text-center">Our Team</h1>
+    <div class="team-member">
+        <a href="https://www.linkedin.com/in/yogini-pawar-b8a784247/" target="_blank" class="linkedin-link">
+            <img src="{{ url_for('static', filename='yogini.jpg') }}" alt="Yogini">
+        </a>
+        <h2>Yogini Pawar</h2>
+        <p>Email:<a href="mailto:yogini2821@gmail.com" target="_blank" style="color: black;">yogini2821@gmail.com</a></p> <!-- Added ID -->
+        <a href="https://github.com/yoginipawar" target="_blank" style="color: black;"><i class="fab fa-github fa-lg"></i> /yoginipawar</a> <!-- Updated GitHub icon -->
+    </div>
+    <div class="team-member">
+        <a href="https://www.linkedin.com/in/dinesh-saliyar/" target="_blank" class="linkedin-link">
+            <img src="{{ url_for('static', filename='dinesh.jpg') }}" alt="Dinesh">
+        </a>
+        <h2>Dinesh Saliyar</h2>
+        <p>Email:<a href="mailto:dineshsaliyar@gmail.com" target="_blank" style="color: black;">dineshsaliyar@gmail.com</a></p> <!-- Added ID -->
+        <a href="https://github.com/dinesh0110" target="_blank" style="color: black;"><i class="fab fa-github fa-lg"></i> /dinesh0110</a> <!-- Updated GitHub icon -->
+    </div>
+    <div class="team-member">
+        <a href="https://www.linkedin.com/in/ketaki-sonawane/" target="_blank" class="linkedin-link">
+            <img src="{{ url_for('static', filename='ketaki.jpg') }}" alt="Ketaki">
+        </a>
+        <h2>Ketaki Sonawane</h2>
+        <p>Email:<a href="mailto:ketakisonawane27@gmail.com" target="_blank" style="color: black;">ketakisonawane27@gmail.com</a></p> <!-- Added ID -->
+        <a href="https://github.com/ketaki-27" target="_blank" style="color: black;"><i class="fab fa-github fa-lg"></i> /ketaki-27</a> <!-- Updated GitHub icon -->
+    </div>
+    <div class="team-member">
+        <a href="https://www.instagram.com/sharvajpatil/" target="_blank" class="linkedin-link">
+            <img src="{{ url_for('static', filename='sharvaj.jpg') }}" alt="Sharvaj">
+        </a>
+        <h2>Sharvaj patil</h2>
+        <p>Email:<a href="mailto:sharvajpatil2002@gmail.com" target="_blank" style="color: black;">sharvajpatil2002@gmail.com</a></p> <!-- Added ID -->
+        <a href="https://github.com/sharvajpatil" target="_blank" style="color: black;"><i class="fab fa-github fa-lg"></i> /sharvajpatil</a> <!-- Updated GitHub icon -->
+    </div>
+</div>
+    <footer style="background-color: #007cc2; color: white; padding: 20px; text-align: center;">
+       <p>&copy; 2024 Walmart Sales Prediction. All rights reserved.</p>
+       <p>Contact us at <a href="mailto:support@walmart.com" target="_blank" style="color: white;">support@walmart.com</a></p>
+      <div class="footer-icons" style="margin-top: 10px;">
+       <a href="https://www.facebook.com/walmart" target="_blank" style="color: white;margin-right: 10px;""><i class="fab fa-facebook fa-lg"></i></a>
+       <a href="https://twitter.com/walmart" target="_blank" style="color: white;margin-right: 10px;""><i class="fab fa-twitter fa-lg"></i></a>
+       <a href="https://www.linkedin.com/company/walmart" target="_blank" style="color: white;margin-right: 10px;""><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

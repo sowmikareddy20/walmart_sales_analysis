@@ -1,0 +1,136 @@
+/* Global Styles */
+/* styles.css */
+
+/* Walmart logo styling */
+.walmart-logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #007cc2;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.navbar a:hover {
+  background-color: #007cc2;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #007cc2;
+  color: white;
+}
+
+.navbar img {
+  height: 50px;
+  padding: 0px 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group div {
+  margin-right: 10px;
+}
+
+/* Button Styles */
+button[type="button"],
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: none;
+}
+
+.popup p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Custom Styles */
+/* Add your custom styles here */

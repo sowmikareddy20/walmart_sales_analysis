@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1 class="text-center my-4">Prediction Result</h1>
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Prediction Result</h4>
+                <p>Predicted weekly sales for Store {{ store }}, Department {{ dept }} in the month of {{ month_name }} {{ year }} is: ${{ output }}</p>
+                <hr>
+                <a href="/" class="btn btn-primary">Make Another Prediction</a>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #007cc2; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2024 Walmart Sales Prediction. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:support@walmart.com" target="_blank" style="color: white;">support@walmart.com</a></p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/walmart" target="_blank" style="color: white; margin-right: 10px;"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com/walmart" target="_blank" style="color: white; margin-right: 10px;"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://www.linkedin.com/company/walmart" target="_blank" style="color: white;"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
