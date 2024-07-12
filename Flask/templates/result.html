@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.jpg') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #C6E2FF;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+       background-color: #ffd700;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       border-radius: 30px; 
+        border: 1px solid #dee2e6;
+        flex: 1;
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+<br><br><br>
+    <div class="container">
+        <div class="form">
+            <h1 class="text-center my-4" style="color:#0234d2;font-weight:bold;font-family:Times New Roman">Prediction Result</h1>
+            <div class="alert alert-success" role="alert">
+
+                <p style="font-size:25px;font-family:Times New Roman">Predicted weekly sales for Store Number {{ store }} Department Number {{ dept }} in {{ month_name }} {{ year }} is: <br>${{ output }}</p>
+                <hr>
+                <a href="/" class="btn btn-primary">Make Another Prediction</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer style="background-color: #0234d2; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2024 Walmart Sales Prediction. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:support@walmart.com" target="_blank" style="color: white;">support@walmart.com</a></p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/walmart" target="_blank" style="color: white; margin-right: 10px;"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com/walmart" target="_blank" style="color: white; margin-right: 10px;"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://www.linkedin.com/company/walmart" target="_blank" style="color: white;"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
